@@ -1,1 +1,1 @@
-# shopify-graphql-sample-queries
+# Shopify Graphql Queries
