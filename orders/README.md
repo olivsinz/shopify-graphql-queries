@@ -1,4 +1,6 @@
-# GraphQL that return orders
+# Orders
+
+# GraphQL queries that return orders
 
 ```
 # Get the first 10 orders
@@ -13,8 +15,31 @@
 }
 ```
 
+<div align="right">
+<b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get the first 10 orders with authorized payments
+{
+  orders(first:10, query:"financial_status:AUTHORIZED") {
+    edges {
+      node {
+        id
+        displayFinancialStatus
+      }
+    }
+  }
+}
 ```
 
+<div align="right">
+  <b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
 # Get an order by its ID (more complex query)
 {
   order(id: "gid://shopify/Order/1248358563862") {
@@ -83,3 +108,12 @@
 }
 
 ```
+
+<div align="right">
+  <b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+<div align="right">
+  <b><a href="https://github.com/0l1v3r5/shopify-graphql-queries">↤ Back To Index</a></b>
+</div>
