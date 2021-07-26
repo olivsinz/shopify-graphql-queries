@@ -1,4 +1,7 @@
-# GraphQL queries that return collections
+
+# Collections
+
+## GraphQL queries that return collections
 
 ```
 # Get the first 10 collections
@@ -13,6 +16,10 @@
 }
 ```
 
+<div align="right">
+  <b><a href="#collections">↥ Back To Top</a></b>
+</div>
+
 ```
 # Get a collection by its ID
 {
@@ -21,6 +28,10 @@
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#collections">↥ Back To Top</a></b>
+</div>
 
 ```
 # Get a collection using the QueryRoot.node field and a GraphQL fragment (Simple query)
@@ -33,6 +44,10 @@
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#collections">↥ Back To Top</a></b>
+</div>
 
 ```
 # Get a collection using the QueryRoot.node field and a GraphQL fragment (More complex query)
@@ -92,6 +107,10 @@
 }
 
 ```
+
+<div align="right">
+  <b><a href="#collections">↥ Back To Top</a></b>
+</div>
 
 <div align="right">
   <b><a href="https://github.com/0l1v3r5/shopify-graphql-queries">↤ Back To Index</a></b>
