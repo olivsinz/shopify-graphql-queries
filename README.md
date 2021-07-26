@@ -2,8 +2,8 @@
 
 Shopify GraphQL samples queries
 
-Collections
+[Collections](https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/collections)
 
-Products
+[Products](https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/products)
 
-Orders
+[Orders](https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/orders)
