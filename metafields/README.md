@@ -22,6 +22,7 @@
   <b><a href="#metafields">↥ Back To Top</a></b>
 </div>
 <br>
+
 ```
 # Query a specific metafield by its namespace and key
 {
