@@ -34,6 +34,25 @@
   }
 }
 ```
+<div align="right">
+  <b><a href="#customers">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get multiple customers using their IDs and GraphQL aliases
+{
+  customer1: customer(id:"gid://shopify/Customer/1310260264982") {
+    displayName
+  }
+  customer2: customer(id:"gid://shopify/Customer/1310260789270") {
+    displayName
+  }
+  customer3: customer(id: "gid://shopify/Customer/1310260854806") {
+    displayName
+  }
+}
+```
 
 <div align="right">
   <b><a href="#customers">↥ Back To Top</a></b>
