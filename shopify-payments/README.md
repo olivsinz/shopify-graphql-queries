@@ -42,7 +42,49 @@
   }
 }
 ```
+<div align="right">
+  <b><a href="#shopify-payments">↥ Back To Top</a></b>
+</div>
+<br>
 
+```
+# Get the IDs, accountNumber, etc of the first 10 bank accounts
+{
+  shopifyPaymentsAccount {
+    bankAccounts(first:5) {
+      edges {
+        node {
+          id
+          accountNumber
+          accountNumberLastDigits
+          bankName
+          createdAt
+          currency
+          routingNumber
+          status
+          payouts(first: 10, reverse: true) {
+            edges {
+              node {
+                issuedAt
+                net {
+                  amount
+                  currencyCode
+                }
+                summary {
+                  chargesFee {
+                    amount
+                    currencyCode
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
 <div align="right">
   <b><a href="#shopify-payments">↥ Back To Top</a></b>
 </div>
