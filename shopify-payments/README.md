@@ -10,6 +10,13 @@
       edges {
         node {
           id
+          accountNumber
+          accountNumberLastDigits
+          bankName
+          createdAt
+          currency
+          routingNumber
+          status
         }
       }
     }
