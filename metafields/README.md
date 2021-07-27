@@ -22,6 +22,26 @@
   <b><a href="#metafields">↥ Back To Top</a></b>
 </div>
 <br>
+```
+# Query a specific metafield by its namespace and key
+{
+  product(id:"gid://shopify/Product/1974208397334") {
+    metafield(namespace: "instructions", key: "wash") {
+      id
+      value
+      namespace
+      createdAt
+      updatedAt
+      description
+      legacyResourceId
+    }
+  }
+}
+```
+<div align="right">
+  <b><a href="#metafields">↥ Back To Top</a></b>
+</div>
+<br>
 
 ```
 # Query a product's first 20 metafields
