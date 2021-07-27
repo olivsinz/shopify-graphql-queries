@@ -30,7 +30,6 @@
     metafield(namespace: "instructions", key: "wash") {
       id
       value
-      namespace
       description
       createdAt
       updatedAt
