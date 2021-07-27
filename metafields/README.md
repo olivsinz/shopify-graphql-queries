@@ -31,8 +31,11 @@
       id
       value
       namespace
+      description
       createdAt
       updatedAt
+      type
+      ownerType
       description
       legacyResourceId
     }
