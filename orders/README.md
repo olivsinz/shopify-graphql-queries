@@ -35,6 +35,23 @@
 ```
 
 <div align="right">
+<b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get a list of orders using their IDs and GraphQL aliases
+{
+  order1: order(id:"gid://shopify/Order/1248358563862") {
+  	name
+  }
+  order2: order(id:"gid://shopify/Order/1248358694934") {
+    name
+  }
+}
+```
+
+<div align="right">
   <b><a href="#orders">↥ Back To Top</a></b>
 </div>
 <br>
