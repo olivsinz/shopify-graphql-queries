@@ -69,6 +69,72 @@
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#metafields">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Query a resources's first 10 private metafields
+{
+  product(id:"gid://shopify/Product/10079785100") {
+    privateMetafields(first:10) {
+      edges {
+        node {
+          id
+          namespace
+          key
+          value
+          valueType
+        }
+      }
+    }
+  }
+}
+```
+
+<div align="right">
+  <b><a href="#metafields">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Query a specific private metafield using the `node` field and a GraphQL fragment
+{
+  node(id:"gid://shopify/PrivateMetafield/6291512") {
+    ...on PrivateMetafield {
+      id
+      namespace
+      key
+      value
+      valueType
+    }
+  }
+}
+```
+<div align="right">
+  <b><a href="#metafields">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Query a resource's private metafields using the `privateMetafields` connection on the QueryRoot
+{
+  privateMetafields(first:10, owner:"gid://shopify/Product/10079785100") {
+    edges {
+      node {
+        id
+        namespace
+        key
+        value
+        valueType
+      }
+    }
+  }
+}
+```
+
 <div align="right">
   <b><a href="#metafields">↥ Back To Top</a></b>
 </div>
