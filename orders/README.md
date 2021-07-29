@@ -131,6 +131,76 @@
 </div>
 <br>
 
+```
+# Get the first 10 draft orders
+{
+  draftOrders(first: 10) {
+    edges {
+      node {
+        id
+      }
+    }
+  }
+}
+```
+
+<div align="right">
+  <b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get a draft order using the QueryRoot.node field and a GraphQL fragment
+{
+  node(id:"gid://shopify/DraftOrder/132584701974") {
+    id
+    ...on DraftOrder {
+      name
+    }
+  }
+}
+```
+
+<div align="right">
+  <b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get the order that created the draft order
+{
+  draftOrder(id: "gid://shopify/DraftOrder/132584701974") {
+    order {
+      id
+    }
+  }
+}
+```
+
+<div align="right">
+  <b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get the first 10 draft orders that have a completed status
+{
+  draftOrders(first: 10, query:"status:completed") {
+    edges {
+      node {
+        id
+        email
+      }
+    }
+  }
+}
+```
+
+<div align="right">
+  <b><a href="#orders">↥ Back To Top</a></b>
+</div>
+<br>
+
 <div align="right">
   <b><a href="https://github.com/0l1v3r5/shopify-graphql-queries">↤ Back To Index</a></b>
 </div>
