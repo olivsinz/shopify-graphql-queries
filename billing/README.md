@@ -40,6 +40,25 @@
   }
 }
 ```
+<div align="right">
+  <b><a href="#billing">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
+# Get information about whether the app credits are test transactions
+{
+  appInstallation {
+    credits(first: 5) {
+      edges {
+        node {
+          test
+        }
+      }
+    }
+  }
+}
+```
 
 <div align="right">
   <b><a href="#billing">↥ Back To Top</a></b>
