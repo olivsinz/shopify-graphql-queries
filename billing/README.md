@@ -12,7 +12,7 @@
         node {
           amount {
             amount
-          	currencyCode
+            currencyCode
           }
         }
       }
