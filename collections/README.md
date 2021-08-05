@@ -22,6 +22,19 @@
 <br>
 
 ```
+# Get the number of products in the collection
+{
+  collection(id: "gid://shopify/Collection/70598819862") {
+    productsCount
+  }
+}
+```
+<div align="right">
+  <b><a href="#collections">↥ Back To Top</a></b>
+</div>
+<br>
+
+```
 # Get a collection by its ID
 {
   collection(id: "gid://shopify/Collection/70598819862") {
