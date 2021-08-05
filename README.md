@@ -4,6 +4,7 @@ Shopify GraphQL samples queries
 
 ## Index
 <ul>
+  <li><a href="https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/billing">Billing</a></li>
   <li><a href="https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/customers">Customers</a></li>
   <li><a href="https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/collections">Collections</a></li>
   <li><a href="https://github.com/0l1v3r5/shopify-graphql-queries/tree/main/metafields">Metafields</a></li>
